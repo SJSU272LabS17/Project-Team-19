@@ -15,7 +15,9 @@ Our solution aims to look at the below data points and identify the risky and ca
  -	Past insurance claims.
  
  
-Using this software, insurance companies can gauge the risk based on the driver behaviour score projected in the dashboard. This would suggest the probability of the customer filing a claim against the policy. The more data an insurance company has about the prospective driver, the better the company can guess the quality of the driver.  
+Using this software, insurance companies can gauge the risk based on the driver behaviour score projected in the dashboard. This would suggest the probability of the customer filing a claim against the policy. The more data an insurance company has about the prospective driver, the better the company can guess the quality of the driver.
+
+Reference : http://ranjanr.blogspot.com/
 
 2)	A mobile dashboard to control all connected IoT devices in the house
 
@@ -26,4 +28,9 @@ Our solution aims to build a dashboard or use voice controlled device like Watso
 We plan to implement the following features:
  -	Integrate the control of multiple devices to one platform.
  -	Create the dashboard.
- -	Enable voice controlled interaction with the smart devices
+ -	Enable voice controlled interaction with the smart devices. 
+ 
+Reference: http://ranjanr.blogspot.com/
+
+ 
+
