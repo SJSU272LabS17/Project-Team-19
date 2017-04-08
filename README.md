@@ -1,4 +1,4 @@
-1)	Help car insurance companies and transformation network companies identify risky and cautious drivers
+**1)	Help car insurance companies and transformation network companies identify risky and cautious drivers**
 
 The total number of automobile accidents and fatalities has been on the increase in most States. If a person has had many accidents in the past, car insurance companies and transformation network companies (like Uber, Lyft etc.,) logically assume that the person is likely to have more accidents in the future. For this reason, these companies use the driving record to calculate their risk profile.
 Our solution aims to look at the below data points and identify the risky and cautious auto drivers.
@@ -16,7 +16,7 @@ Using this software, companies can gauge the risk based on the driver behavior s
 Reference: http://ranjanr.blogspot.com/
 
 
-2)	A mobile dashboard to control all connected IoT devices in the house
+**2)	A mobile dashboard to control all connected IoT devices in the house**
 
 The number of IoT devices are increasing rapidly and it is becoming challenging to manage all these devices individually. To make our homes smart, the devices need to have a centralised control system.
 Our solution aims to build a dashboard or use voice controlled device like Watson, Alexa, Google Home to control and adjust different smart devices at home like lights, switches, music player, sprinklers. This solution will make our lives easier, more convenient and comfortable.
