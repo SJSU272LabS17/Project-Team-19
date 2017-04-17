@@ -37,6 +37,7 @@ Thanks to Cloud IAAS, PAAS and SAAS Services available right now, many small and
    - Parse Document
    - Upload Sample Question
    - Train the Data to according to Sample Question.
+ 
 This SAAS application will be subscription based, and the user will be charged according the the number of questions asked. Though this will be useful for any industry type, are few examples of industries which can use our Application.
  - Customer Care support
  - Health Care
