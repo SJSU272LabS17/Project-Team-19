@@ -28,7 +28,7 @@ We plan to implement the following features:
 Reference: http://ranjanr.blogspot.com/
 
  
-**3) Knowledge Base for Small and medium scale Organization.(New Idea)
+3) Knowledge Base for Small and medium scale Organization.(New Idea)
 
 Thanks to Cloud IAAS, PAAS and SAAS Services available right now, many small and medium scale organizations are coming up in the market. But it is becoming hard for them to devote resources to organize the documents or knowledge base in the organization. Even it becomes hard for an new joiner to find the answers for all the small problems. By keeping this in mind we plan to implement an SAAS service for Such kind of organization in the following way:
  - Create an interactive Front-End where different people can log in to search for desired problem.(IBM SSO and LAMP Stack)
