@@ -1,5 +1,6 @@
 # Load libraries
-import pandas
+import pandas as pd
+import numpy as np
 from pandas.tools.plotting import scatter_matrix
 import matplotlib.pyplot as plt
 from sklearn import model_selection
@@ -16,10 +17,14 @@ from sklearn.svm import SVC
  #Load dataset
 url = "/home/poojitha/Insurance/InsData.csv"
 names = ['DMV', 'VehicleType', 'Age', 'Location', 'CreditScore','DrivingExperience','AnnualMileage','Gender','MaritalStatus','RiskCategory']
-dataset = pandas.read_csv(url, names=names)
-
+#dataset = pandas.read_csv(url, names=names)
 # Split-out validation dataset
-array = dataset.values
+#array = dataset.values
+
+#get pandas dataframe and convert it into numpy array
+datafr = pd.read_csv(url)
+array = np.array(datafr)
+# Split-out validation dataset
 X = array[:,0:9]
 Y = array[:,9]
 validation_size = 0.20
