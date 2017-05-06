@@ -1,3 +1,4 @@
+dmv,vehicle_type,age,location,credit_score,driving_exp,annual_mileage,gender,marital_status,risk_category
 1,1,35,93441,700,60,7000,1,1,1
 1,2,40,93440,800,85,8000,2,2,1
 0,1,35,93333,650,90,5000,1,1,1
