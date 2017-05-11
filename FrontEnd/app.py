@@ -7,7 +7,7 @@ mysql = MySQL()
 app = Flask(__name__)
 
 # MySQL configurations
-app.config['MYSQL_DATABASE_USER'] = 'root'
+app.config['MYSQL_DATABASE_USER'] = 'cmpe272'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'root1234'
 app.config['MYSQL_DATABASE_DB'] = 'test'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
@@ -31,7 +31,6 @@ def showSignin():
 def signUp():
     try:
         _name = request.form['inputName']
-
         _email = request.form['inputEmail']
         _password = request.form['inputPassword']
 
@@ -62,8 +61,9 @@ def signUp():
 
 @app.route('/userHome')
 def userHome():
+
     if session.get('user'):
-        return render_template('userHome.html')
+        return
     else:
         return render_template('error.html',error = 'Unauthorized Access')
 
@@ -85,10 +85,11 @@ def validateLogin():
         cursor.callproc('sp_validateLogin', (_username,))
         data = cursor.fetchall()
 
+
         if len(data) > 0:
             if str(data[0][3])== _password:
                 session['user'] = data[0][0]
-                return redirect('/userHome')
+                return render_template('UserHomeTest.html',name = data[0][1])
             else:
                 return render_template('error.html', error='Wrong Email address or Password.')
         else:
@@ -106,6 +107,4 @@ def validateLogin():
 if __name__ == "__main__":
     app.secret_key = 'super secret key'
     app.config['SESSION_TYPE'] = 'filesystem'
-
-    #session.init_app(app)
-    app.run(port=5000, debug=True)
+    app.run(port=5000,debug=True)
