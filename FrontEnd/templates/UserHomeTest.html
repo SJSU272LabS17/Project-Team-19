@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Hello, {{name}}</title>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="/static/src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/src/css/style.css" rel="stylesheet">
+
 
     <link href="/static/bootstrap.min.css" rel="stylesheet">
     <link href="/static/style.css" rel="stylesheet">
@@ -14,19 +20,19 @@
   <body>
 
 
-    <div class="container">
-      <div class="header">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" ><a href="/">Home</a></li>
-            <li role="presentation"><a href="showSignin">Logout</a></li>
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+    <a href="/" class="w3-bar-item w3-button"><b>Insurance</b> Consultant</a>
 
-          </ul>
-        </nav>
-        <h3 class="text-muted">Insurance Consultancy</h3>
-      </div>
+    <div class="w3-right w3-hide-small">
+      <a href="#Services" class="w3-bar-item w3-button">Services</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
 
-	</div>
 	<div class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -56,53 +62,53 @@
 			</h3>
 			<div class="row">
 				<div class="col-md-12">
-					<form role="form">
+					<form role="form" action="/validateInput" method="post">
 						<div class="form-group row">
-  							<label for="example-text-input" class="col-2 col-form-label">Name</label>
+  							<label for="Name" class="col-2 col-form-label">Name</label>
  						<div class="col-10">
-   							 <input class="form-control" type="text" value="Shivam Gupta" id="example-text-input">
+                            <input type="text" name="Name" id="Name" class="form-control" placeholder="Name" required autofocus>
   						</div>
 						</div>
 						<div class="form-group row">
-						  <label for="example-DOB-input" class="col-2 col-form-label">Date Of Birth</label>
+						  <label for="DOB" class="col-2 col-form-label">Date Of Birth</label>
 						  <div class="col-10">
-							<input class="form-control" type="date" value="2011-08-19" id="example-DOB-input">
+                              <input type="date" name="DOB" id="DOB" class="form-control" placeholder="MM/DD/YYY" required autofocus>
 						  </div>
 						</div>
 						<div class="form-group row">
-						  <label for="example-licience-input" class="col-2 col-form-label">Vehicle Licience Plate No</label>
+						  <label for="PlateNo" class="col-2 col-form-label">Vehicle License Plate No</label>
 						  <div class="col-10">
-							<input class="form-control" type="text" value="7NAWABY678" id="example-licience-input">
+                              <input type="text" name="PlateNo" id="PlateNo" class="form-control" placeholder="License Plate No." required autofocus>
 						  </div>
 						</div>
 						<div class="form-group row">
-						  <label for="example-ZIP-input" class="col-2 col-form-label">ZIP CODE</label>
+						  <label for="Zip_Code" class="col-2 col-form-label">Zip Code</label>
 						  <div class="col-10">
-							<input class="form-control" type="number" value="95126" id="example-ZIP-input">
+                              <input type="number" name="Zip_Code" id="Zip_Code" class="form-control" placeholder="Zip Code" required autofocus>
 						  </div>
 						</div>
 						<div class="form-group row">
-						  <label for="example-exp-input" class="col-2 col-form-label">Dirving Experience(Months)</label>
+						  <label for="Experience" class="col-2 col-form-label">Driving Experience(Months)</label>
 						  <div class="col-10">
-							<input class="form-control" type="number" value="44" id="example-exp-input">
+                              <input type="number" name="Experience" id="Experience" class="form-control" placeholder="Experience" required autofocus>
 						  </div>
 						</div>
 						<div class="form-group row">
-						  <label for="example-millage-input" class="col-2 col-form-label">Annual Millage</label>
+						  <label for="Mileage" class="col-2 col-form-label">Annual Mileage</label>
 						  <div class="col-10">
-							<input class="form-control" type="number" value="60000" id="example-millage-input">
+                              <input type="number" name="Mileage" id="Mileage" class="form-control" placeholder="Mileage" required autofocus>
 						  </div>
 						</div>
 						<div class="form-group row">
-						  <label for="example-gender-input" class="col-2 col-form-label">Gender</label>
+						  <label for="Gender" class="col-2 col-form-label">Gender</label>
 						  <div class="col-10">
-							<input class="form-control" type="text" value="Male" id="example-gender-input">
+                              <input type="text" name="Gender" id="Gender" class="form-control" placeholder="Gender" required autofocus>
 						  </div>
 						</div>
 						<div class="form-group row">
-						  <label for="example-datetime-local-input" class="col-2 col-form-label">Marital Status</label>
+						  <label for="Marital_Status" class="col-2 col-form-label">Marital Status</label>
 						  <div class="col-10">
-							<input class="form-control" type="Text" value="Married" id="example-datetime-local-input">
+                              <input type="text" name="Marital_Status" id="Marital_Status" class="form-control" placeholder="Marital_Status" required autofocus>
 						  </div>
 						</div>
 

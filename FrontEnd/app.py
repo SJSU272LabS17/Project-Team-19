@@ -72,6 +72,28 @@ def logout():
     session.pop('user',None)
     return redirect('/')
 
+@app.route('/validateInput', methods=['POST', 'GET'])
+def homePage():
+    try:
+        _Name = request.form['Name']
+        _DOB = request.form['DOB']
+        _PlateNo = request.form['PlateNo']
+        _Zip_Code = request.form['Zip_Code']
+        _Experience = request.form['Experience']
+        _Mileage = request.form['Mileage']
+        _Gender = request.form['Gender']
+        _Marital_Status = request.form['Marital_Status']
+        print "1234"
+        print _Name
+        print _DOB
+        print _PlateNo
+        print _Zip_Code
+        return render_template('Output.html', name=_Name, name2=_DOB, name3=_PlateNo,name4=_Zip_Code,name5=_Experience,name6=_Mileage,name7=_Gender,name8=_Marital_Status)
+
+
+    except Exception as e:
+        return json.dumps({'error': str(e)})
+
 @app.route('/validateLogin', methods=['POST'])
 def validateLogin():
     try:
