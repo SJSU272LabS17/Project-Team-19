@@ -1,7 +1,7 @@
 from flask import Flask, render_template, json, request, redirect
 from flask.ext.mysql import MySQL
 from flask import session
-
+from test import xyz
 
 mysql = MySQL()
 app = Flask(__name__)
@@ -83,12 +83,10 @@ def homePage():
         _Mileage = request.form['Mileage']
         _Gender = request.form['Gender']
         _Marital_Status = request.form['Marital_Status']
-        print "1234"
-        print _Name
-        print _DOB
-        print _PlateNo
-        print _Zip_Code
-        return render_template('Output.html', name=_Name, name2=_DOB, name3=_PlateNo,name4=_Zip_Code,name5=_Experience,name6=_Mileage,name7=_Gender,name8=_Marital_Status)
+
+        temp = xyz(_Name, _DOB)
+
+        return render_template('Output.html', temp = temp)
 
 
     except Exception as e:
