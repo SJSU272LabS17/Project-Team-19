@@ -108,7 +108,7 @@ def validateLogin():
 
         if len(data) > 0:
             if str(data[0][3])== _password:
-                session['user'] = data[0][0]
+                #session['user'] = data[0][0]
                 return render_template('UserHomeTest.html',name = data[0][1])
             else:
                 return render_template('error.html', error='Wrong Email address or Password.')
