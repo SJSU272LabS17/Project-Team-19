@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'Apple@000'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'root1234'
 app.config['MYSQL_DATABASE_DB'] = 'test'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
@@ -145,7 +145,7 @@ def validateLogin():
 
         if len(data) > 0:
             if str(data[0][3])== _password:
-                session['user'] = data[0][0]
+                #session['user'] = data[0][0]
                 return render_template('UserHomeTest.html',name = data[0][1])
             else:
                 return render_template('error.html', error='Wrong Email address or Password.')
@@ -162,4 +162,5 @@ def validateLogin():
         con.close()
 
 if __name__ == "__main__":
+
     app.run(port=5001,debug=True)
