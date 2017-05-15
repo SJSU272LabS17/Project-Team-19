@@ -98,36 +98,12 @@ def homePage():
             _intMaritalStatus = 2
 
         temp = xyz(_age,_PlateNo,_Experience,_Zip_Code,_Mileage,_intGender,_intMaritalStatus)
-        if temp[1] == 1:
-            progressColor = "progress-bar progress-bar-success"
-            risk = 30
-            riskp = "width:30%"
-        elif temp[1] == 2:
-            progressColor = "progress-bar progress-bar-warning"
-            risk = 60
-            riskp = "width:60%"
-        elif temp[1] == 3:
-            progressColor = "progress-bar progress-bar-danger"
-            risk = 90
-            riskp = "width:90%"
 
-        return render_template('Output.html', name = _Name,color = progressColor, risk = risk, riskp = riskp)
+        return render_template('Output.html', temp = temp)
 
 
     except Exception as e:
         return json.dumps({'error': str(e)})
-
-
-
-@app.route('/validateDriverInput', methods=['POST', 'GET'])
-def validateDriverInput():
-    try:
-        print "------- INSIDE -----"
-        _Name = request.form['select']
-    except Exception as e:
-        return json.dumps({'error': str(e)})
-
-
 
 @app.route('/validateLogin', methods=['POST'])
 def validateLogin():
@@ -162,4 +138,6 @@ def validateLogin():
         con.close()
 
 if __name__ == "__main__":
+    app.secret_key = 'super secret key'
+    app.config['SESSION_TYPE'] = 'filesystem'
     app.run(port=5001,debug=True)
