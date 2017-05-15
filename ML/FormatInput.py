@@ -7,18 +7,23 @@ def formatInput(age,PlateNo,Experience,Zip_Code,Mileage,Gender,Marital_Status):
     #['DMV', 'VehicleType', 'Age', 'Location', 'CreditScore','DrivingExperience','AnnualMileage','Gender','MaritalStatus','RiskCategory']
     dmvScore = generateDmv()
     creditScore = generateCredit()
+    city = ''
+    state = ''
+    #3,3,40,90013,535,480,28000,2,2,2
+    zip = zipcode.isequal(str(Zip_Code))
+    if(zip):
+        state = zip.state
+        city =  zip.city
+        print city,state
     print "dmv: ", dmvScore
     print "credit: ", creditScore
-    #zip = Zip_Code.isequal(Zip_Code)
-    zip = zipcode.isequal(str(Zip_Code))
-    state = zip.state
-    city =  zip.city
     input = [dmvScore,PlateNo,age,Zip_Code,creditScore,Experience,Mileage,Gender,Marital_Status]
-    #input = [dmvScore,4,70,95129,creditScore,2,30000,2,2]
     result = predictRisk(input)
+    print result
+    listVal = list()
     #returnVals = riskscore; dmvscore; creditscore; state corresponding to zip, city
-    returnVals = str(result) + ";" + str(dmvScore) + ";" + str(creditScore) + ";" + str(state) + ";" + str(city)
-    return returnVals
+    #returnVals = str(result) + ";" + str(dmvScore) + ";" + str(creditScore) + ";" + str(state) + ";" + str(city)
+    return result
 
 
 def generateDmv():
@@ -28,6 +33,11 @@ def generateDmv():
 
 def generateCredit():
     return random.randrange(100,800)
+
+#FOR TEST
+#age,PlateNo,Experience,Zip_Code,Mileage,Gender,Marital_Status
+#input = [40,3,4,90013,28000,2,2]
+#formatInput(31,3,24,93125,30000,2,2)
 
 
 
