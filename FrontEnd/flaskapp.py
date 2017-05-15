@@ -1,6 +1,7 @@
 from flask import Flask, render_template, json, request, redirect
 from flask.ext.mysql import MySQL
 from flask import session
+from FormatInput import formatInput
 from test import xyz
 
 mysql = MySQL()
@@ -8,7 +9,7 @@ app = Flask(__name__)
 
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'Apple@000'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'root1234'
 app.config['MYSQL_DATABASE_DB'] = 'test'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
@@ -97,21 +98,28 @@ def homePage():
         else:
             _intMaritalStatus = 2
 
-        temp = xyz(_age,_PlateNo,_Experience,_Zip_Code,_Mileage,_intGender,_intMaritalStatus)
-        if temp[1] == 1:
-            progressColor = "progress-bar progress-bar-success"
+        print "Before----- "
+        temp = formatInput(_age,3,int(_Experience),int(_Zip_Code),int(_Mileage),int(_intGender),int(_intMaritalStatus))
+
+        print "temp "
+        print temp[0]
+        if temp[0] == 1:
+            #progressColor = "progress-bar progress-bar-success"
             risk = 30
             riskp = "width:30%"
-        elif temp[1] == 2:
-            progressColor = "progress-bar progress-bar-warning"
+            text = "Low Risky"
+        elif temp[0] == 2:
+            #progressColor = "progress-bar progress-bar-warning"
             risk = 60
             riskp = "width:60%"
-        elif temp[1] == 3:
-            progressColor = "progress-bar progress-bar-danger"
+            text = "Moderate Risky"
+        elif temp[0] == 3:
+            #progressColor = "progress-bar progress-bar-danger"
             risk = 90
             riskp = "width:90%"
+            text = "High Risky"
 
-        return render_template('Output.html', name = _Name,color = progressColor, risk = risk, riskp = riskp)
+        return render_template('Output.html', name = _Name, risk = risk, riskp = riskp,text = text)
 
 
     except Exception as e:

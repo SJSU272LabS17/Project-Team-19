@@ -10,25 +10,33 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 def predictRisk(input):
  	#Load dataset
-	url = "/home/sneha/Documents/CMPE272/272_proj/data.csv"
+	url = '/Volumes/Macintosh HD/SJSU/272/Project-Team-19/ML/Data.csv'
 	#names = ['dmv', 'vehicle_type', 'age', 'location', 'credit_score','driving_exp','annual_mileage','gender','marital_status','risk_category']
 	names = ['DMV', 'VehicleType', 'Age', 'Location', 'CreditScore','DrivingExperience','AnnualMileage','Gender','MaritalStatus','RiskCategory']
-	
+
+	print "INSIDE PredictRisk"
 
 	#get pandas dataframe and convert it into numpy array
 	datafr = pd.read_csv(url)
 	array = np.array(datafr)
+	print "INSIDE PredictRisk-----"
 	# Split-out validation dataset
 	X = array[:,0:9]
 	Y = array[:,9]
 	validation_size = 0.00
 	seed = 7
+	print "----Check ---"
 	X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)
 
-	
+	print "----Check1 ---"
 	lda = LinearDiscriminantAnalysis()
-	lda.fit(X_train,Y_train)	
+	print "----Check2---"
+	lda.fit(X_train,Y_train)
+	print "----Check3---"
+	print input
 	result = lda.predict(input)
+
+	print "INSIDE PredictRisk9999999"
 	print result
 	return result
 

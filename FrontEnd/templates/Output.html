@@ -70,9 +70,21 @@
         <div class="container">
           <h2>Risk Analysis Result</h2>
           <div class="progress">
-            <div class={{ color }} role="progressbar" aria-valuenow={{ risk }} aria-valuemin="0" aria-valuemax="100" style={{ riskp }}  }>Moderate Risky
+              {%  if risk == 30 %}
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow={{ risk }} aria-valuemin="0" aria-valuemax="100" style={{ riskp }} >{{ text }}
               <span class="sr-only"></span>
             </div>
+              {% endif %}
+            {%  if risk == 60 %}
+            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow={{ risk }} aria-valuemin="0" aria-valuemax="100" style={{ riskp }} >{{ text }}
+              <span class="sr-only"></span>
+            </div>
+              {% endif %}
+            {%  if risk == 90 %}
+            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow={{ risk }} aria-valuemin="0" aria-valuemax="100" style={{ riskp }} >{{ text }}
+              <span class="sr-only"></span>
+            </div>
+              {% endif %}
           </div>
         </div>
         <h2>Analysis Result:- <br>{{ name }} is Moderate risky as a driver.</h2>

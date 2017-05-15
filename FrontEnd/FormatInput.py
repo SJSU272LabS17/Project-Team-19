@@ -1,20 +1,26 @@
 import random
-from AssessRisk import *
+from AssesRisk import *
 import zipcode #pip install zipcode
 
 
 def formatInput(age,PlateNo,Experience,Zip_Code,Mileage,Gender,Marital_Status):
     #['DMV', 'VehicleType', 'Age', 'Location', 'CreditScore','DrivingExperience','AnnualMileage','Gender','MaritalStatus','RiskCategory']
+    print age
+    print PlateNo
+    print Experience
+    print Zip_Code
+    print Mileage
+    print Gender
+    print Marital_Status
     dmvScore = generateDmv()
+    print dmvScore
     creditScore = generateCredit()
+    print creditScore
     city = ''
     state = ''
     #3,3,40,90013,535,480,28000,2,2,2
-    zip = zipcode.isequal(str(Zip_Code))
-    if(zip):
-        state = zip.state
-        city =  zip.city
-        print city,state
+    #zip = zipcode.isequal(str(Zip_Code))
+    #print zip
     print "dmv: ", dmvScore
     print "credit: ", creditScore
     input = [dmvScore,PlateNo,age,Zip_Code,creditScore,Experience,Mileage,Gender,Marital_Status]
