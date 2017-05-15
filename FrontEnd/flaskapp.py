@@ -1,7 +1,7 @@
 from flask import Flask, render_template, json, request, redirect
 from flask.ext.mysql import MySQL
-from flask import session
-from test import xyz
+#from flask import session
+from test import xyz,zyx
 
 mysql = MySQL()
 app = Flask(__name__)
@@ -59,21 +59,15 @@ def signUp():
         cursor.close()
         conn.close()
 
-@app.route('/userHome')
-def userHome():
 
-    if session.get('user'):
-        return
-    else:
-        return render_template('error.html',error = 'Unauthorized Access')
 
 @app.route('/logout')
 def logout():
-    session.pop('user',None)
+    #session.pop('user',None)
     return redirect('/')
 
 @app.route('/validateInput', methods=['POST', 'GET'])
-def homePage():
+def monitoring_iot():
     try:
         _Name = request.form['Name']
         _DOB = request.form['DOB']
@@ -100,8 +94,19 @@ def homePage():
         temp = xyz(_age,_PlateNo,_Experience,_Zip_Code,_Mileage,_intGender,_intMaritalStatus)
 
         return render_template('Output.html', temp = temp)
+    except Exception as e:
+        return json.dumps({'error': str(e)})
 
+@app.route('/validateList', methods=['POST', 'GET'])
+def homePage():
+    try:
+        print "assasa"
+        _id = request.form('select')
+        print "passing to the function"
+        zyx(_id)
+        print "asas"
 
+        return render_template('UserHomeTest.html')
     except Exception as e:
         return json.dumps({'error': str(e)})
 
@@ -138,6 +143,6 @@ def validateLogin():
         con.close()
 
 if __name__ == "__main__":
-    app.secret_key = 'super secret key'
-    app.config['SESSION_TYPE'] = 'filesystem'
-    app.run(port=5001,debug=True)
+    #app.secret_key = 'super secret key'
+    #app.config['SESSION_TYPE'] = 'filesystem'
+    app.run(debug=True)
