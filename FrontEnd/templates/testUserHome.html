@@ -1,39 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Welcome To Insurance Consultancy</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>Bootstrap 3, from LayoutIt!</title>
 
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
-    <link href="../static/signup.css" rel="stylesheet">
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+    <link href="/static/layout/src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/layout/src/css/style.css" rel="stylesheet">
 
   </head>
-<script src="../static/js/jquery.js"></script>
-<script src="../static/js/signUp.js"></script>
   <body>
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+            <a href="/" class="w3-bar-item w3-button"><b>Insurance</b> Consultant</a>
 
-    <div class="container">
-      <div class="header">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" ><a href="/">Home</a></li>
-            <li role="presentation"><a href="showSignin">Sign In</a></li>
-            <li role="presentation" class="active"><a href="showSignUp">Sign Up</a></li>
-          </ul>
-        </nav>
-        <h3 class="text-muted">Insurance Consultancy</h3>
+        <div class="w3-right w3-hide-small">
+        <a href="/#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="/" class="w3-bar-item w3-button">Logout</a>
+        </div>
       </div>
-
-
-
-
-
-      <footer class="footer">
-        <p>&copy; Company 2015</p>
-      </footer>
-
     </div>
+
+
+    <div class="container-fluid">
+	<div class="row">
+        <div class="jumbotron">
+				<h2>
+					Hello, {{name}}!
+				</h2>
+				<p>
+					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+				</p>
+				<p>
+					<a class="btn btn-primary btn-large" href="#">Learn more</a>
+				</p>
+			</div>
+		<div class="col-md-6">
+			<div class="panel-group" id="panel-12263">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-12263" href="#panel-element-315032">Driver's Risk Analysis</a>
+					</div>
+					<div id="panel-element-315032" class="panel-collapse collapse">
+						<div class="panel-body">
+							Anim pariatur cliche...
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="panel-group" id="panel-8452">
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-8452" href="#panel-element-901283">Driver's Behavior </a>
+					</div>
+					<div id="panel-element-901283" class="panel-collapse collapse">
+						<div class="panel-body">
+							Anim pariatur cliche...
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+    <script src="/static/layout/src/js/jquery.min.js"></script>
+    <script src="/static/layout/src/js/bootstrap.min.js"></script>
+    <script src="/static/layout/src/js/scripts.js"></script>
   </body>
 </html>
