@@ -10,7 +10,7 @@ def formatInput(age,PlateNo,Experience,Zip_Code,Mileage,Gender,Marital_Status):
     print "dmv: ", dmvScore
     print "credit: ", creditScore
     #zip = Zip_Code.isequal(Zip_Code)
-    zip = zipcode.isequal('95129')
+    zip = zipcode.isequal(Zip_Code)
     state = zip.state
     city =  zip.city
     input = [dmvScore,PlateNo,age,Zip_Code,creditScore,Experience,Mileage,Gender,Marital_Status]
