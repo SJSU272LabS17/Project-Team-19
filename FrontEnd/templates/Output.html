@@ -5,7 +5,7 @@
     <title><!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Insurance Consultancy</title>
+    <title>Risk Analysis</title>
 
 
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,6 +18,10 @@
     <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
     <link href="/static/css/signup.css" rel="stylesheet">
     <script src="/static/js/jquery-1.11.2.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   </head>
 
@@ -45,24 +49,39 @@
           </ul>
         </nav>
       </div>
+
       <div class="jumbotron">
-
-        {{temp}}
-
-
+          <h3>Result for {{ name }}</h3>
       </div>
 
+        <b>Risk analysis reference bar</b>
+        <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" style="width:33%">
+            Low
+        </div>
+        <div class="progress-bar progress-bar-warning" role="progressbar" style="width:33%">
+            Moderate
+        </div>
+        <div class="progress-bar progress-bar-danger" role="progressbar" style="width:34%">
+            High
+        </div>
+      </div>
 
+        <div class="container">
+          <h2>Risk Analysis Result</h2>
+          <div class="progress">
+            <div class={{ color }} role="progressbar" aria-valuenow={{ risk }} aria-valuemin="0" aria-valuemax="100" style={{ riskp }}  }>Moderate Risky
+              <span class="sr-only"></span>
+            </div>
+          </div>
+        </div>
+        <h2>Analysis Result:- <br>{{ name }} is Moderate risky as a driver.</h2>
 
       <footer class="footer">
         <p>&copy; SJSU Insurance Consultancy 2017</p>
       </footer>
 
     </div>
-  </body>
-</html></title>
-</head>
-<body>
 
 </body>
 </html>

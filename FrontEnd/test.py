@@ -5,4 +5,4 @@ def xyz(age,PlateNo,Experience,Zip_Code,Mileage,Gender,Marital_Status):
     print PlateNo
     print Gender
     print Marital_Status
-    return "Risky"
+    return [2,2,2];
