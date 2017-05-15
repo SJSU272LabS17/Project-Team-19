@@ -1,7 +1,7 @@
 from flask import Flask, render_template, json, request, redirect
 from flask.ext.mysql import MySQL
 #from flask import session
-from test import xyz,zyx
+from test import xyz
 
 mysql = MySQL()
 app = Flask(__name__)
