@@ -1,6 +1,6 @@
 from flask import Flask, render_template, json, request, redirect
 from flask.ext.mysql import MySQL
-#from flask import session
+from flask import session
 from test import xyz
 
 mysql = MySQL()
@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'root1234'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'Apple@000'
 app.config['MYSQL_DATABASE_DB'] = 'test'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
@@ -59,15 +59,21 @@ def signUp():
         cursor.close()
         conn.close()
 
+@app.route('/userHome')
+def userHome():
 
+    if session.get('user'):
+        return
+    else:
+        return render_template('error.html',error = 'Unauthorized Access')
 
 @app.route('/logout')
 def logout():
-    #session.pop('user',None)
+    session.pop('user',None)
     return redirect('/')
 
 @app.route('/validateInput', methods=['POST', 'GET'])
-def monitoring_iot():
+def homePage():
     try:
         _Name = request.form['Name']
         _DOB = request.form['DOB']
@@ -92,23 +98,36 @@ def monitoring_iot():
             _intMaritalStatus = 2
 
         temp = xyz(_age,_PlateNo,_Experience,_Zip_Code,_Mileage,_intGender,_intMaritalStatus)
+        if temp[1] == 1:
+            progressColor = "progress-bar progress-bar-success"
+            risk = 30
+            riskp = "width:30%"
+        elif temp[1] == 2:
+            progressColor = "progress-bar progress-bar-warning"
+            risk = 60
+            riskp = "width:60%"
+        elif temp[1] == 3:
+            progressColor = "progress-bar progress-bar-danger"
+            risk = 90
+            riskp = "width:90%"
 
-        return render_template('Output.html', temp = temp)
+        return render_template('Output.html', name = _Name,color = progressColor, risk = risk, riskp = riskp)
+
+
     except Exception as e:
         return json.dumps({'error': str(e)})
 
-@app.route('/validateList', methods=['POST', 'GET'])
-def homePage():
+
+
+@app.route('/validateDriverInput', methods=['POST', 'GET'])
+def validateDriverInput():
     try:
-        print "assasa"
-        _id = request.form('select')
-        print "passing to the function"
-        zyx(_id)
-        print "asas"
-
-        return render_template('UserHomeTest.html')
+        print "------- INSIDE -----"
+        _Name = request.form['select']
     except Exception as e:
         return json.dumps({'error': str(e)})
+
+
 
 @app.route('/validateLogin', methods=['POST'])
 def validateLogin():
@@ -126,7 +145,7 @@ def validateLogin():
 
         if len(data) > 0:
             if str(data[0][3])== _password:
-                #session['user'] = data[0][0]
+                session['user'] = data[0][0]
                 return render_template('UserHomeTest.html',name = data[0][1])
             else:
                 return render_template('error.html', error='Wrong Email address or Password.')
@@ -143,6 +162,4 @@ def validateLogin():
         con.close()
 
 if __name__ == "__main__":
-    #app.secret_key = 'super secret key'
-    #app.config['SESSION_TYPE'] = 'filesystem'
-    app.run(debug=True)
+    app.run(port=5001,debug=True)
