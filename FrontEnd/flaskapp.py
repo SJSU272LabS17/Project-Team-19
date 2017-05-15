@@ -84,7 +84,20 @@ def homePage():
         _Gender = request.form['Gender']
         _Marital_Status = request.form['Marital_Status']
 
-        temp = xyz(_Name, _DOB)
+        _DOB = int(_DOB[:4])
+        _age = 2017 - _DOB
+
+        if _Gender == "female":
+            _intGender = 1
+        else:
+            _intGender = 2
+
+        if _Marital_Status == "Married":
+            _intMaritalStatus = 1
+        else:
+            _intMaritalStatus = 2
+
+        temp = xyz(_age,_PlateNo,_Experience,_Zip_Code,_Mileage,_intGender,_intMaritalStatus)
 
         return render_template('Output.html', temp = temp)
 
