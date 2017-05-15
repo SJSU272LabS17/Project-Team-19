@@ -6,3 +6,5 @@ def xyz(age,PlateNo,Experience,Zip_Code,Mileage,Gender,Marital_Status):
     print Gender
     print Marital_Status
     return "Risky"
+def zyx(id):
+    print id
