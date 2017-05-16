@@ -1,10 +1,10 @@
-**Spring17-Team19
+**Spring17-Team19**
 
-**Project Name : Risk Analysis
+**Project Name : Risk Analysis **
 
-**Abstract
+**Abstract**
 
-**Driver Risk Assessment and Monitoring
+**Driver Risk Assessment and Monitoring**
 
 The total number of automobile accidents and fatalities has been on the increase in most States. If a person has had many accidents in the past, car insurance companies and transformation network companies (like Uber, Lyft etc.,) logically assume that the person is likely to have more accidents in the future. The project aims to look at certain other data points along with the driving history and identify the risky and cautious drivers. It also facilitates monitoring the driving behavior and provide key signs of unsafe and aggressive driving practices.
 
@@ -20,7 +20,7 @@ Our solution aims to look at the below data points and identify the risky and ca
 - Driving experience: The more the experience, the safer the driver is considered.
 - Annual mileage: More annual mileage, means more likelihood of being involved in accidents.
 
-**User Stories
+**User Stories**
 
 - As an Insurance Company Personnel, I can assess the Risk category of the driver and also decide on the insurance premium to be charged based on this. I can also monitor his driving pattern on regular intervals. If proven safe and trustworthy, the insurance premium can be reduced.
 
@@ -28,7 +28,7 @@ Our solution aims to look at the below data points and identify the risky and ca
 
 - As an individual, I can also check my driving score, before applying to companies like Uber.
 
-**Architecture diagram
+**Architecture diagram**
 
 As shown below, the different components of system are connected with each other. 
 For example, when a user submits credentials in order to log into the system, the browser forwards this request.
@@ -37,15 +37,15 @@ Machine learning model is applied on the data set and a score is predicted and r
 
 
 
-Working Model on AWS
+**Working Model on AWS**
 http://ec2-54-149-92-43.us-west-2.compute.amazonaws.com/*
 Sample Credentials:
 username: 
 password: 
 
-Flow Diagram
+**Flow Diagram**
 
-HOW TO START THIS PROJECT
+**HOW TO START THIS PROJECT**
 Team 19
 https://github.com/poojithaamin
 
