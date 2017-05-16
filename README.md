@@ -1,6 +1,6 @@
 **1)	Help car insurance companies and transformation network companies identify risky and cautious drivers**
 
-***EC2 URL : http://ec2-54-149-92-43.us-west-2.compute.amazonaws.com/*
+**EC2 URL : http://ec2-54-149-92-43.us-west-2.compute.amazonaws.com/*
 
 **MOBILE APP LINK:
 
