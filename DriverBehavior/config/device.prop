@@ -3,7 +3,7 @@ Organization-ID=p2d2f3
 Device-Type=vehicle
 Device-ID=vehicle-sample 
 Authentication-Method=token
-Authentication-Token=-0l0hj0xI*n&OKdeA7
+Authentication-Token=-'###'
 
 ## Optional fields
 Clean-Session = true
