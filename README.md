@@ -36,6 +36,7 @@ The User credentials are validated against encrypted credentials stored in the d
 Machine learning model is applied on the data set and a score is predicted and returned to the user.
 
 ![Alt text](/Artifacts/read1.png =250x250)
+![](/Artifacts/read1.png =250x250)
 
 **Working Model on AWS**
 http://ec2-54-149-92-43.us-west-2.compute.amazonaws.com/*
