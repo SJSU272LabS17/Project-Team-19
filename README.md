@@ -52,10 +52,8 @@ Machine learning model is applied on the data set and a score is predicted and r
 http://ec2-54-149-92-43.us-west-2.compute.amazonaws.com/*
 
 
-**Flow Diagram**
+**Team 19**
 
-**HOW TO START THIS PROJECT**
-Team 19
 https://github.com/poojithaamin
 
 
