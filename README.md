@@ -35,9 +35,9 @@ For example, when a user submits credentials in order to log into the system, th
 The User credentials are validated against encrypted credentials stored in the database. 
 Machine learning model is applied on the data set and a score is predicted and returned to the user.
 
-
-![Alt text](/Artifacts/read2.png?raw=true)
-
+<p align="center">
+<img src ="/Artifacts/systemarchitecture.jpg?raw=true"/>
+</p>
 
 <p align="center">
 <img src ="/Artifacts/DriverMonitor.jpg?raw=true"/>
