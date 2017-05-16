@@ -14,29 +14,23 @@ def predictRisk(input):
 	#names = ['dmv', 'vehicle_type', 'age', 'location', 'credit_score','driving_exp','annual_mileage','gender','marital_status','risk_category']
 	names = ['DMV', 'VehicleType', 'Age', 'Location', 'CreditScore','DrivingExperience','AnnualMileage','Gender','MaritalStatus','RiskCategory']
 
-	print "INSIDE PredictRisk"
-
 	#get pandas dataframe and convert it into numpy array
 	datafr = pd.read_csv(url)
 	array = np.array(datafr)
-	print "INSIDE PredictRisk-----"
 	# Split-out validation dataset
 	X = array[:,0:9]
 	Y = array[:,9]
 	validation_size = 0.00
 	seed = 7
-	print "----Check ---"
 	X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)
 
-	print "----Check1 ---"
+	
 	lda = LinearDiscriminantAnalysis()
-	print "----Check2---"
-	lda.fit(X_train,Y_train)
-	print "----Check3---"
-	print input
+	lda.fit(X_train,Y_train)	
 	result = lda.predict(input)
-
-	print "INSIDE PredictRisk9999999"
+	result = result.tolist()
+	print result
+	return result
 	print result
 	return result
 
