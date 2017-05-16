@@ -41,7 +41,7 @@ Machine learning model is applied on the data set and a score is predicted and r
 
 
 
-![Alt text](/Artifacts/read1.png?raw=true)
+![Alt text](/Artifacts/DriverMonitor.jpg?raw=true)
 
 **Working Model on AWS**
 http://ec2-54-149-92-43.us-west-2.compute.amazonaws.com/*
