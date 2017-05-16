@@ -1,33 +1,53 @@
-**1)	Help car insurance companies and transformation network companies identify risky and cautious drivers**
+**Spring17-Team19
 
-EC2 URL : http://ec2-54-149-92-43.us-west-2.compute.amazonaws.com/*
+**Project Name : Risk Analysis
 
-MOBILE APP LINK:
+**Abstract
 
-ABSTRACT : 
+**Driver Risk Assessment and Monitoring
 
-The total number of automobile accidents and fatalities has been on the increase in most States. If a person has had many accidents in the past, car insurance companies and transformation network companies (like Uber, Lyft etc.,) logically assume that the person is likely to have more accidents in the future. For this reason, these companies use the driving record to calculate their risk profile.
+The total number of automobile accidents and fatalities has been on the increase in most States. If a person has had many accidents in the past, car insurance companies and transformation network companies (like Uber, Lyft etc.,) logically assume that the person is likely to have more accidents in the future. The project aims to look at certain other data points along with the driving history and identify the risky and cautious drivers. It also facilitates monitoring the driving behavior and provide key signs of unsafe and aggressive driving practices.
 
-**Risk Analysis
-
-Our solution aims to look at the below data points and identify the risky and cautious auto drivers.
+Our solution aims to look at the below data points and identify the risky and cautious auto drivers
 
 - DMV “points”: The point system used by DMV to monitor the driving habits of all licensed drivers.
--	VIN (Vehicle Identification Number): VINs summarize information about the vehicle.
--	Credit Score: Good credit indicates that one is responsible and pay bills on time.
+- VIN (Vehicle Identification Number): VINs summarize information about the vehicle.
+- Credit Score: Good credit indicates that one is responsible and pay bills on time.
 - Location: City dwellers pay more for insurance because there are more people in cities, raising the likelihood of accidents.
 - Age: Drivers under 25 years old and those over 65 years old are statistically more likely to be involved in accidents.
 - Gender: As per stats men drive more miles on an average than their female counterparts, automatically raising the likelihood of collision.
--	Past insurance claims.
+-  Marital Status: Married people are known  to abide by the traffic rules and relatively safe than than the unmarried people.
+- Driving experience: The more the experience, the safer the driver is considered.
+- Annual mileage: More annual mileage, means more likelihood of being involved in accidents.
 
-Using this software, companies can gauge the risk based on the driver behavior score projected in the dashboard. This would be a subscription based service and we would be using Scikit machine learning library for this project.
+**User Stories
 
-**Driver Behavior Monitor
+- As an Insurance Company Personnel, I can assess the Risk category of the driver and also decide on the insurance premium to be charged based on this. I can also monitor his driving pattern on regular intervals. If proven safe and trustworthy, the insurance premium can be reduced.
 
-Prediction using historical data and by means of common physical laws, may not always be precise and accurate. For such cases, the project introduces the second feature, which would make observations while the driver is engaged in the actual driving task, in a real vehicle, operating on a real road. This is the way forward and is the valid method to conclude on thedriving pattern. The project simulates this feature using the sample data.
+- As a Cab Service company Associate, I can check the past driving history of the driver before employing him and also monitor him regularly to assess his driving behavior. I can also check his driving mannerism in case of any complaint or concerns raised by my customers.
+
+- As an individual, I can also check my driving score, before applying to companies like Uber.
+
+**Architecture diagram
+
+As shown below, the different components of system are connected with each other. 
+For example, when a user submits credentials in order to log into the system, the browser forwards this request.
+The User credentials are validated against encrypted credentials stored in the database. 
+Machine learning model is applied on the data set and a score is predicted and returned to the user.
 
 
-Reference: http://ranjanr.blogspot.com/
+
+Working Model on AWS
+http://ec2-54-149-92-43.us-west-2.compute.amazonaws.com/*
+Sample Credentials:
+username: 
+password: 
+
+Flow Diagram
+
+HOW TO START THIS PROJECT
+Team 19
+https://github.com/poojithaamin
 
 
 
