@@ -19,13 +19,13 @@ public class SendSensorData {
 
 		Properties deviceProps = new Properties();
 		try {
-			deviceProps.load(new FileInputStream ("device.prop"));
+			deviceProps.load(new FileInputStream ("config/device.prop"));
 		} catch (Exception e) {
 			e.printStackTrace();
 			throw e;
 		}
 
-		String inputFilename = "CarProbeSample.json";
+		String inputFilename = "data/CarProbeSample.json";
 
 		DeviceClient deviceClient = null;
 		try {
