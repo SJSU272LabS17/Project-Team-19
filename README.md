@@ -1,8 +1,10 @@
-**Spring17-Team19**
+**Spring17 - Team19**
+====================
 
-**Project Name : Risk Analysis **
+ Project Name : <b>RISK Analysis</b>
 
 **Abstract**
+ ===========
 
 **Driver Risk Assessment and Monitoring**
 
@@ -21,7 +23,7 @@ Our solution aims to look at the below data points and identify the risky and ca
 - Annual mileage: More annual mileage, means more likelihood of being involved in accidents.
 
 **User Stories**
-
+================
 - As an Insurance Company Personnel, I can assess the Risk category of the driver and also decide on the insurance premium to be charged based on this. I can also monitor his driving pattern on regular intervals. If proven safe and trustworthy, the insurance premium can be reduced.
 
 - As a Cab Service company Associate, I can check the past driving history of the driver before employing him and also monitor him regularly to assess his driving behavior. I can also check his driving mannerism in case of any complaint or concerns raised by my customers.
@@ -29,6 +31,7 @@ Our solution aims to look at the below data points and identify the risky and ca
 - As an individual, I can also check my driving score, before applying to companies like Uber.
 
 **Architecture diagram**
+========================
 
 As shown below, the different components of system are connected with each other. 
 For example, when a user submits credentials in order to log into the system, the browser forwards this request.
@@ -45,10 +48,9 @@ Machine learning model is applied on the data set and a score is predicted and r
 
 
 **Working Model on AWS**
+
 http://ec2-54-149-92-43.us-west-2.compute.amazonaws.com/*
-Sample Credentials:
-username: 
-password: 
+
 
 **Flow Diagram**
 
@@ -82,7 +84,11 @@ https://github.com/poojithaamin
 
 
 
+
+
+
 OLD TOPICS
+==========
 
 **2)	A mobile dashboard to control all connected IoT devices in the house**
 
