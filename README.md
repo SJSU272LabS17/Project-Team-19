@@ -35,7 +35,7 @@ For example, when a user submits credentials in order to log into the system, th
 The User credentials are validated against encrypted credentials stored in the database. 
 Machine learning model is applied on the data set and a score is predicted and returned to the user.
 
-![Alt text](/Artifacts/read1.mng?raw=true)
+![Alt text](/Artifacts/read1.png?raw=true)
 
 **Working Model on AWS**
 http://ec2-54-149-92-43.us-west-2.compute.amazonaws.com/*
