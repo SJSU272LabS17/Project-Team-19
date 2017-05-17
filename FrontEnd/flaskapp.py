@@ -120,9 +120,9 @@ def homePage():
 
         DMVScore = temp[1]
         CreditScore = temp[2]
-        VehicleScore = temp[3]
+        VehicleScore = 3
 
-        return render_template('Output.html', name = _Name, risk = risk, riskp = riskp,text = text, dmvScore = DMVScore,cScore=CreditScore,vScore = VehicleScore,Mileage = _Mileage, Exp = _Experience)
+        return render_template('Output.html', name = _Name, risk = risk, riskp = riskp,text = text, dmvScore = DMVScore,cScore=CreditScore,vScore = VehicleScore,Mileage = _Mileage + " miles", Exp = _Experience+" months")
 
 
     except Exception as e:

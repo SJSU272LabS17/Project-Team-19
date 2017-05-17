@@ -52,8 +52,8 @@
 
       <div class="jumbotron">
           <h3>Result for {{ name }}</h3>
+          <h2>Analysis Result:- <br>{{ name }} is {{ text }} as a driver.</h2>
       </div>
-
         <b>Risk analysis reference bar</b>
         <div class="progress">
         <div class="progress-bar progress-bar-success" role="progressbar" style="width:33%">
@@ -87,7 +87,18 @@
               {% endif %}
           </div>
         </div>
-        <h2>Analysis Result:- <br>{{ name }} is {{ text }} as a driver.</h2>
+
+
+
+         <div class="container">
+         <h3>Analysis Parameters</h3>
+             ----------------------------------------
+          <h4>DMV score : {{ dmvScore }}</h4><br>
+          <h4>Credit score : {{ cScore }}</h4><br>
+          <h4>Vehicle score : {{ vScore }}</h4><br>
+          <h4>Mileage : {{ Mileage }}</h4><br>
+          <h4>Experience : {{ Exp }}</h4><br>
+        </div>
 
       <footer class="footer">
         <p>&copy; SJSU Insurance Consultancy 2017</p>
