@@ -32,8 +32,8 @@ Our solution aims to look at the below data points and identify the risky and ca
 
 - As an individual, I can also check my driving score, before applying to companies like Uber.
 
-<b> Architecture Diagram<B>
-======================================
+**Architecture Diagram**
+=======================
 1) <b>System architecture for Risk analysis implememtation </b>
 
 <p align="center">
@@ -53,12 +53,7 @@ Our solution aims to look at the below data points and identify the risky and ca
 
 **Working Model on AWS**
 
-http://ec2-54-149-92-43.us-west-2.compute.amazonaws.com/*
-
-
-**Team 19**
-
-https://github.com/poojithaamin
+http://ec2-54-149-92-43.us-west-2.compute.amazonaws.com/
 
 
 
@@ -84,10 +79,7 @@ https://github.com/poojithaamin
 
 
 
-
-
-
-
+=================================================
 
 OLD TOPICS
 ==========
