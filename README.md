@@ -10,7 +10,9 @@
 
 **Driver Risk Assessment and Monitoring**
 
-The total number of automobile accidents and fatalities has been on the increase in most States. If a person has had many accidents in the past, car insurance companies and transformation network companies (like Uber, Lyft etc.,) logically assume that the person is likely to have more accidents in the future. The project aims to look at certain other data points along with the driving history and identify the risky and cautious drivers. It also facilitates monitoring the driving behavior and provide key signs of unsafe and aggressive driving practices.
+The total number of automobile accidents and fatalities has been on the increase in most States. If a person has had many accidents in the past, car insurance companies and transformation network companies (like Uber, Lyft etc.,) logically assume that the person is likely to have more accidents in the future. 
+- The project aims to look at certain other data points along with the driving history and identify the risky and cautious drivers. 
+- It also facilitates monitoring the driving behavior and provide key signs of unsafe and aggressive driving practices.
 
 Our solution aims to look at the below data points and identify the risky and cautious auto drivers
 
