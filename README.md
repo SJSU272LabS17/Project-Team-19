@@ -45,6 +45,13 @@ Our solution aims to look at the below data points and identify the risky and ca
 <img src ="/Artifacts/DriverMonitor.jpg?raw=true"/>
 </p>
 
+<b>Node-RED workflow for driver behavior monitoring:</b>
+<div> <span>
+<img src ="/Artifacts/NodeRedFlow2.jpg?raw=true"/>
+<img src ="/Artifacts/NodeRedFlow1.jpg?raw=true"/>
+</span></div>
+</br>
+
 <b>Map UI displaying vehicle trace and driving behavior segments:</b>
 <P align = "center">
 <img src ="/Artifacts/Map2.jpg?raw=true"/>
