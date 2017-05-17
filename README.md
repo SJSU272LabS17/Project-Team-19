@@ -32,21 +32,21 @@ Our solution aims to look at the below data points and identify the risky and ca
 
 - As an individual, I can also check my driving score, before applying to companies like Uber.
 
-**Architecture diagram**
-========================
-
-As shown below, the different components of system are connected with each other. 
-For example, when a user submits credentials in order to log into the system, the browser forwards this request.
-The User credentials are validated against encrypted credentials stored in the database. 
-Machine learning model is applied on the data set and a score is predicted and returned to the user.
+1) <b>System architecture for Risk analysis implememtation </b>
 
 <p align="center">
 <img src ="/Artifacts/systemarchitecture.jpg?raw=true"/>
 </p>
 
+2) <b>Driver behavior monitor architecture: </b>
 <p align="center">
 <img src ="/Artifacts/DriverMonitor.jpg?raw=true"/>
 </p>
+
+3) <b>Map UI displaying vehicle trace and driving behavior segments:</b>
+<P align = "center">
+<img src ="/Artifacts/Map2.jpg?raw=true"/>
+</P>
 
 
 **Working Model on AWS**
