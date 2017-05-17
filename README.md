@@ -32,6 +32,8 @@ Our solution aims to look at the below data points and identify the risky and ca
 
 - As an individual, I can also check my driving score, before applying to companies like Uber.
 
+<b> Architecture Diagram<B>
+======================================
 1) <b>System architecture for Risk analysis implememtation </b>
 
 <p align="center">
@@ -43,7 +45,7 @@ Our solution aims to look at the below data points and identify the risky and ca
 <img src ="/Artifacts/DriverMonitor.jpg?raw=true"/>
 </p>
 
-3) <b>Map UI displaying vehicle trace and driving behavior segments:</b>
+<b>Map UI displaying vehicle trace and driving behavior segments:</b>
 <P align = "center">
 <img src ="/Artifacts/Map2.jpg?raw=true"/>
 </P>
