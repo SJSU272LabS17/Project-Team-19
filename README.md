@@ -1,9 +1,9 @@
 **Spring17 - Team19**
 ====================
 
- Project Name : <b>RISK Analysis</b>
+ Project Name   : <b>RISK Analysis</b>
  
- Report : https://github.com/SJSU272LabS17/Project-Team-19/blob/master/Report/Team19_Project_Report.pdf
+ Project Report : https://github.com/SJSU272LabS17/Project-Team-19/blob/master/Report/Team19_Project_Report.pdf
 
 **Abstract**
  ===========
