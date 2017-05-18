@@ -66,7 +66,15 @@ Our solution aims to look at the below data points and identify the risky and ca
 
 http://ec2-54-149-92-43.us-west-2.compute.amazonaws.com/
 
+**Team 19**
 
+> [Poojitha Amin](https://github.com/poojithaamin)
+
+> [Sneha Vedakkemadathil](https://github.com/SnehaVM)
+
+> [Shivam Gupta](https://github.com/shivamgupta01)
+
+> [Rovin Singh Patwal](https://github.com/Rovin284)
 
 
 
