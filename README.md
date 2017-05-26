@@ -72,7 +72,7 @@ http://ec2-54-149-92-43.us-west-2.compute.amazonaws.com/
 
 > [Sneha Vedakkemadathil](https://github.com/SnehaVM)
 
-> [Shivam Gupta](https://github.com/shivamgupta01)
+> [Shivam Kumar Gupta](https://github.com/shivamgupta01)
 
 > [Rovin Singh Patwal](https://github.com/Rovin284)
 
